@@ -13,6 +13,7 @@
             </Grid.RowDefinitions>
             <ContentControl Content="AutoCompleteBox" Foreground="#FFFF81E3" Background="#FFCB9DC1" Style="{StaticResource HeaderControl_Style}"/>
             <StackPanel Grid.Row="1">
+                <TextBlock Text="{Binding SelectedItem, ElementName=autoCompleteBox}" Foreground="#FFCB9DC1" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <TextBlock Text="Enter text:" Foreground="#FF808080" FontSize="14" Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <AutoCompleteBox x:Name="autoCompleteBox" />
             </StackPanel>
